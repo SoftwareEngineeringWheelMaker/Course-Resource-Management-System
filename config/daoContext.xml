@@ -17,5 +17,11 @@
 	<bean name="loginService" class="com.course.service.LoginService" parent="baseDao">
 	<property name="baseDao" ref="baseDao"/>
 	</bean>
+	<bean name="msgService" class="com.course.service.MsgService" parent="baseDao">
+	<property name="baseDao" ref="baseDao"/>
+	</bean>
+	<bean name="sendMsgService" class="com.course.service.SendMsgService" parent="baseDao">
+	<property name="baseDao" ref="baseDao"/>
+	</bean>
 
 </beans>
