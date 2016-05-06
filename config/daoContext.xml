@@ -42,5 +42,9 @@
 		parent="baseDao">
 		<property name="baseDao" ref="baseDao" />
 	</bean>
+	<bean name="noticeService" class="com.course.service.NoticeService"
+		parent="baseDao">
+		<property name="baseDao" ref="baseDao" />
+	</bean>
 
 </beans>

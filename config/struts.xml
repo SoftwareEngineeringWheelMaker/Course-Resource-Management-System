@@ -33,6 +33,10 @@
 			method="{1}">
 			<result name="success">/welcome.jsp</result>
 		</action>
+		<action name="notice_*" class="com.course.action.NoticeAction"
+			method="{1}">
+			<result name="success">/welcome.jsp</result>
+		</action>
 	</package>
 
 	<package name="default" namespace="/" extends="struts-default">
