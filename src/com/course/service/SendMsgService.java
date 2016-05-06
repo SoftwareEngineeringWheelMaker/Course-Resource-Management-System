@@ -26,12 +26,18 @@ public class SendMsgService extends HibernateDaoSupport {
 		this.sendMsg = sendMsg;
 	}
 
-	// 保存发送消息
+	/**
+	 * 保存发送消息
+	 * @param sendMsg
+	 */
 	public void saveSendMsg(SendMsg sendMsg) {
 		baseDao.save(sendMsg);
 	}
 
-	// 修改发送消息
+	/**
+	 * 修改发送消息
+	 * @param sendMsg
+	 */
 	public void updateSendMsg(SendMsg sendMsg) {
 		baseDao.update(sendMsg);
 	}

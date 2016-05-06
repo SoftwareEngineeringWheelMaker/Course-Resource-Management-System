@@ -27,13 +27,19 @@ public class MsgService extends HibernateDaoSupport {
 		this.msg = msg;
 	}
 
-	// 保存站内消息
+	/**
+	 * 保存站内消息
+	 * @param msg
+	 */
 	public void saveMsg(Msg msg) {
 		System.out.println(msg.getMid());
 		baseDao.save(msg);
 	}
 
-	// 修改站内消息
+	/**
+	 * 修改站内消息
+	 * @param msg
+	 */
 	public void updateMsg(Msg msg) {
 		System.out.println(msg.getMid());
 		baseDao.update(msg);

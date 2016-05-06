@@ -11,17 +11,36 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd
         ">
-	<bean name="baseDao" class="com.course.common.dao.impl.BaseDaoImpl" >
-	<property name="sessionFactory" ref="sessionFactory"/>
+	<bean name="baseDao" class="com.course.common.dao.impl.BaseDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
-	<bean name="loginService" class="com.course.service.LoginService" parent="baseDao">
-	<property name="baseDao" ref="baseDao"/>
+	<bean name="loginService" class="com.course.service.LoginService"
+		parent="baseDao">
+		<property name="baseDao" ref="baseDao" />
 	</bean>
-	<bean name="msgService" class="com.course.service.MsgService" parent="baseDao">
-	<property name="baseDao" ref="baseDao"/>
+	<bean name="msgService" class="com.course.service.MsgService"
+		parent="baseDao">
+		<property name="baseDao" ref="baseDao" />
 	</bean>
-	<bean name="sendMsgService" class="com.course.service.SendMsgService" parent="baseDao">
-	<property name="baseDao" ref="baseDao"/>
+	<bean name="sendMsgService" class="com.course.service.SendMsgService"
+		parent="baseDao">
+		<property name="baseDao" ref="baseDao" />
+	</bean>
+	<bean name="resourceService" class="com.course.service.ResourceService"
+		parent="baseDao">
+		<property name="baseDao" ref="baseDao" />
+	</bean>
+	<bean name="homeworkService" class="com.course.service.HomeworkService"
+		parent="baseDao">
+		<property name="baseDao" ref="baseDao" />
+	</bean>
+	<bean name="courseService" class="com.course.service.CourseService"
+		parent="baseDao">
+		<property name="baseDao" ref="baseDao" />
+	</bean>
+	<bean name="handInService" class="com.course.service.HandInService"
+		parent="baseDao">
+		<property name="baseDao" ref="baseDao" />
 	</bean>
 
 </beans>

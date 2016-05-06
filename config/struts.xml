@@ -21,11 +21,21 @@
 			method="{1}">
 			<result name="success">/welcome.jsp</result>
 		</action>
+		<action name="resource_*" class="com.course.action.ResourceAction"
+			method="{1}">
+			<result name="success">/welcome.jsp</result>
+		</action>
+		<action name="homework_*" class="com.course.action.HomeworkAction"
+			method="{1}">
+			<result name="success">/welcome.jsp</result>
+		</action>
+		<action name="course_*" class="com.course.action.CourseAction"
+			method="{1}">
+			<result name="success">/welcome.jsp</result>
+		</action>
 	</package>
 
-
 	<package name="default" namespace="/" extends="struts-default">
-
 		<action name="*">
 			<result>{1}.jsp</result>
 		</action>
