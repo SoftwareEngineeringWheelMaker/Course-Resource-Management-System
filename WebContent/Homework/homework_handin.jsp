@@ -10,10 +10,10 @@
 <body>
 	<s:form action="homework_handin" method="post" namespace="/"
 		enctype="multipart/form-data">
-		<input type="file" name="upload" />
-		<s:textfield name="homework.hid" label="作业编号"/>
-		<s:textfield name="user.id" label="提交作业学生ID"/>
-		<s:submit value="提交"/>
+		<s:file type="file" name="upload" label="作业文件" />
+		<s:textfield name="homework.hid" label="作业编号" />
+		<s:textfield name="user.id" label="提交作业学生ID" />
+		<s:submit value="提交" />
 	</s:form>
 </body>
 </html>
