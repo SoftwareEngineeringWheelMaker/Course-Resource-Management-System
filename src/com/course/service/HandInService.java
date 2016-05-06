@@ -28,6 +28,7 @@ public class HandInService extends HibernateDaoSupport {
 
 	/**
 	 * 保存提交作业信息
+	 * @param handIn
 	 */
 	public void saveHandIn(HandIn handIn) {
 		baseDao.save(handIn);
@@ -35,6 +36,7 @@ public class HandInService extends HibernateDaoSupport {
 
 	/**
 	 * 修改提交作业信息
+	 * @param handIn
 	 */
 	public void updateHandIn(HandIn handIn) {
 		baseDao.update(handIn);

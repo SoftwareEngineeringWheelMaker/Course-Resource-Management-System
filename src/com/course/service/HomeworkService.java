@@ -30,6 +30,7 @@ public class HomeworkService extends HibernateDaoSupport {
 
 	/**
 	 * 保存作业任务
+	 * @param homework
 	 */
 	public void saveHomework(Homework homework) {
 		baseDao.save(homework);
@@ -37,6 +38,7 @@ public class HomeworkService extends HibernateDaoSupport {
 
 	/**
 	 * 修改作业任务
+	 * @param homework
 	 */
 	public void updateHomework(Homework homework) {
 		baseDao.update(homework);
@@ -44,6 +46,8 @@ public class HomeworkService extends HibernateDaoSupport {
 
 	/**
 	 * 由id查询获取作业
+	 * @param homework
+	 * @return
 	 */
 	public Homework getHomework(Homework homework) {
 		return baseDao.get(Homework.class, homework.getHid());

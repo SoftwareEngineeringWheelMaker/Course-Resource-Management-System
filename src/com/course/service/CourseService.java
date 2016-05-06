@@ -28,6 +28,7 @@ public class CourseService extends HibernateDaoSupport {
 
 	/**
 	 * 保存课程信息
+	 * @param course
 	 */
 	public void saveCourse(Course course) {
 		baseDao.save(course);
@@ -35,6 +36,7 @@ public class CourseService extends HibernateDaoSupport {
 
 	/**
 	 * 修改课程信息
+	 * @param course
 	 */
 	public void updateCourse(Course course) {
 		baseDao.update(course);
