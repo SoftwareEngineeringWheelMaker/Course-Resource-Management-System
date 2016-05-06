@@ -34,6 +34,9 @@ public class HandIn implements Serializable {
 	@Column(name = "hitime", nullable = false)
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date hitime = new Date();
+	
+	@Column(name = "hievaluate", length = 100, nullable = true)
+	private String hievaluate;
 
 	@ManyToOne()
 	@JoinColumn(name = "hid")
